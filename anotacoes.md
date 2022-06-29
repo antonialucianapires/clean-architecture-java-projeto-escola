@@ -1,0 +1,3 @@
+### Módulo Domain Model
+
+- Entidades possuem uma identidade única, enquanto VOs são considerados iguais, se todos os seus atributos tiverem valores iguais. Na implementação da classe Estudante,a entidade é Estudante porque possui o CPF como identidade única, pois duas pessoas com o mesmo nome não necessariamente são a mesma pessoa. Diferente deste cenário, temos o e-mail que pode ser considerao o mesmo e-mail quando dois ou mais e-mails possuírem endereços iguais.
