@@ -1,7 +1,6 @@
 package br.com.alura;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -24,5 +23,6 @@ public class EmailTest {
         
         Email emailValido = new Email("emailvalido@email.com");
         assertTrue(emailValido.getEndereco().matches("^[a-zA-Z0-9._]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"));
+        assertDoesNotThrow(() -> new Email("emailvalido@email.com"));
     }
 }
