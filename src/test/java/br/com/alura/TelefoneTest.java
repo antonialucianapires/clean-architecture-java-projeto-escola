@@ -11,13 +11,13 @@ public class TelefoneTest {
 
         assertThrows(IllegalArgumentException.class, () -> new Telefone(null, null));
         assertThrows(IllegalArgumentException.class, () -> new Telefone(null, "000000000"));
-        assertThrows(IllegalArgumentException.class, () -> new Telefone("(21)", null));
+        assertThrows(IllegalArgumentException.class, () -> new Telefone("77", null));
         assertThrows(IllegalArgumentException.class, () -> new Telefone("21", "000"));
     }
 
     @Test
     void deveCriarTelefoneValido() {
-        assertDoesNotThrow(() -> new Telefone("(22)", "99097-6587"));
+        assertDoesNotThrow(() -> new Telefone("22", "990976587"));
     }
 
 }

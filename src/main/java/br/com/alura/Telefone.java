@@ -6,10 +6,17 @@ public class Telefone {
 
     public Telefone(String ddd, String numero) {
 
-        if(ddd == null || numero == null || !(ddd + " " + numero).matches("(\\(?\\d{2}\\)?\\s)?(\\d{4,5}\\-\\d{4})")) {
-            throw new IllegalArgumentException("Telefone invalido!");
+        if (ddd == null || numero == null) {
+            throw new IllegalArgumentException("DDD e número sao obrigatórios!");
         }
 
+        if (!ddd.matches("\\d{2}")) {
+            throw new IllegalArgumentException("DDD inválido!");
+        }
+
+        if (!numero.matches("\\d{8}|\\d{9}")) {
+            throw new IllegalArgumentException("Número inválido!");
+        }
         this.ddd = ddd;
         this.numero = numero;
     }
