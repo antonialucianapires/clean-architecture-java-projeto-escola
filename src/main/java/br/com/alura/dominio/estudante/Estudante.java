@@ -1,4 +1,4 @@
-package br.com.alura;
+package br.com.alura.dominio.estudante;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +18,10 @@ public class Estudante {
     }
 
     public Estudante() {
+    }
+
+    public CPF getCpf() {
+        return cpf;
     }
 
     public void adicionarTelefone(String ddd, String numero) {

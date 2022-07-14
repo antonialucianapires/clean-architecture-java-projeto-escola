@@ -1,4 +1,4 @@
-package br.com.alura;
+package br.com.alura.dominio.estudante;
 
 //Value Object
 public class CPF {
@@ -10,6 +10,10 @@ public class CPF {
             throw new IllegalArgumentException("CPF invalido!");
         }
         this.numero = numero;
+    }
+
+    public String getNumero() {
+        return numero;
     }
 
 }
