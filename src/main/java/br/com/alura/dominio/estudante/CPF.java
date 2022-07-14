@@ -1,4 +1,4 @@
-package br.com.alura.estudante;
+package br.com.alura.dominio.estudante;
 
 //Value Object
 public class CPF {

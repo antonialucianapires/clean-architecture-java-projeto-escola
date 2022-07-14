@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.Test;
 
-import br.com.alura.estudante.Telefone;
+import br.com.alura.dominio.estudante.Telefone;
 
 public class TelefoneTest {
 
