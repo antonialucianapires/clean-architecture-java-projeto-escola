@@ -6,6 +6,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
+import br.com.alura.estudante.Email;
+
 public class EmailTest {
 
     @Test

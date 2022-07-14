@@ -1,4 +1,4 @@
-package br.com.alura;
+package br.com.alura.estudante;
 
 public class EstudanteBuilder {
 
@@ -36,16 +36,4 @@ public class EstudanteBuilder {
         return this.estudante;
     }
 
-    public static void main(String[] args) {
-
-        var estudante = EstudanteBuilder.builder()
-                .comNome("Andreia")
-                .comNome("Andreia")
-                .comCPF("888.888.888-38")
-                .comEmail("email@email.com")
-                .comTelefone("22", "000000000")
-                .build();
-
-        System.out.println(estudante);
-    }
 }

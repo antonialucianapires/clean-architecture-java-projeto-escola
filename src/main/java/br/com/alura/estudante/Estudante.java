@@ -1,4 +1,4 @@
-package br.com.alura;
+package br.com.alura.estudante;
 
 import java.util.ArrayList;
 import java.util.List;
