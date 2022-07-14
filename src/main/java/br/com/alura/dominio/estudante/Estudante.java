@@ -20,6 +20,10 @@ public class Estudante {
     public Estudante() {
     }
 
+    public CPF getCpf() {
+        return cpf;
+    }
+
     public void adicionarTelefone(String ddd, String numero) {
         this.telefones.add(new Telefone(ddd, numero));
     }
