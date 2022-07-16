@@ -20,7 +20,7 @@ public class CifradorDeSenhaComMD5 implements CifradorDeSenha {
             }
 
             return sb.toString();
-        } catch (NoSuchAlgorithmException exception) {
+        } catch (Exception exception) {
             throw new RuntimeException("Erro ao criptografar senha");
         }
     }

@@ -1,20 +1,24 @@
 package br.com.alura;
 
-import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.Test;
 
 import br.com.alura.dominio.estudante.Telefone;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class TelefoneTest {
 
     @Test
     void naoDeveCriarTelefonesInvalidos() {
 
-        assertThrows(IllegalArgumentException.class, () -> new Telefone(null, null));
-        assertThrows(IllegalArgumentException.class, () -> new Telefone(null, "000000000"));
-        assertThrows(IllegalArgumentException.class, () -> new Telefone("77", null));
-        assertThrows(IllegalArgumentException.class, () -> new Telefone("21", "000"));
+        IllegalArgumentException numeroIEDDDException = assertThrows(IllegalArgumentException.class, () -> new Telefone(null, null));
+        assertEquals("DDD e número sao obrigatórios!", numeroIEDDDException.getMessage());
+
+        IllegalArgumentException dddInvalidoExceptionassertThrows = assertThrows(IllegalArgumentException.class, () -> new Telefone("1", "990976587"));
+        assertEquals("DDD inválido!", dddInvalidoExceptionassertThrows.getMessage());
+
+        IllegalArgumentException numeroInvalidoException = assertThrows(IllegalArgumentException.class, () -> new Telefone("21", "000"));
+        assertEquals("Número inválido!", numeroInvalidoException.getMessage());
     }
 
     @Test

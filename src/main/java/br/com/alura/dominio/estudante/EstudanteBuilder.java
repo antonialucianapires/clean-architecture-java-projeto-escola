@@ -17,7 +17,7 @@ public class EstudanteBuilder {
         return this;
     }
 
-    public EstudanteBuilder comCPF(String numeroCPF) {
+    public EstudanteBuilder comCPF(String numeroCPF){
         this.estudante.setCpf(new CPF(numeroCPF));
         return this;
     }
