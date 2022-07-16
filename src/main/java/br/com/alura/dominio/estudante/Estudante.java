@@ -34,4 +34,12 @@ public class Estudante {
     public void setEmail(Email email) {
         this.email = email;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public Email getEmail() {
+        return email;
+    }
 }
